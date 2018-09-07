@@ -1,0 +1,261 @@
+body{
+  background: #DDD;
+}
+/* First Ex */
+/*
+span {
+  display: none;
+}
+*/
+/* 2 Ex */
+/*
+button {
+ margin: 10px;
+}
+div{
+  margin: 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+  padding: 10px;
+
+}
+span {
+  display: none;
+}
+*/
+/* 2,3 Ex */
+/*
+div{
+  margin: 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+  padding: 10px;
+
+}
+.box {
+  display: none;
+}
+*/
+/* 4 Ex Animate */
+/*
+.box{
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #EEE;
+  border: 1px solid #CCC;
+  padding: 20px;
+  font-family: Arial,Tahoma;
+  position: relative;
+  top: -400px;
+}
+.head {
+
+  text-align: center;
+  background: #999;
+  padding: 10px;
+  color: #333;
+  font-size: 20px;
+  display: none;
+}
+h2{
+  color: #333;
+  text-align: center;
+  opacity: 1;
+}
+p{
+  text-align: center;
+  border: 1px solid #CCC;
+  padding: 20px;
+  display: none;
+
+}
+.bottom {
+
+  text-align: center;
+  background: #999;
+  padding: 10px;
+  color: #333;
+  font-size: 20px;
+  display: none;
+}
+*/
+/* 5 Ex */
+/*
+div{
+  width: 300px;
+  margin: 50px auto;
+  background: #000;
+  border: 2px solid #999;
+  padding: 20px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-family: Arial,Tahoma;
+  position: relative;
+
+}
+button {
+  width: 100px;
+  height: 50px;
+  background: #000;
+  color: #ca133e;
+  border: 2px solid #ca133e;
+  font-size: 20px;
+}
+*/
+
+/*
+.custom-design{
+  background-color: #EEE;
+  width: 300px;
+  padding: 10px;
+  margin: 20px auto;
+}
+*/
+/*
+input{
+  width: 550px;
+  height: 30px;
+
+}
+
+input, textarea, div {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+}
+
+div{
+  width: 550px;
+  height: 300px;
+  background: #CCC;
+  word-break: break-all;
+}
+*/
+/*
+*{
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  height: 100%;
+  background: #F00;
+}
+h2{
+  color: #FFF;
+  text-align: center;
+  font-family: Arial,Tahoma;
+  font-size: 40px;
+}
+div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  color: #FFF;
+  background: #000;
+}
+div.hidden{
+  display: none;
+}
+*/
+/*
+.goUp {
+  width: 20px;
+  height: 20px;
+  background: #ca133e;
+  color: #FFF;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial,Tahoma;
+  display: none;
+}
+*/
+/*
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: #ca133e;
+  display: none;
+}
+*/
+/*
+.clock{
+  margin: 20px auto;
+  background: #272727;
+  border: 1px solid #FFF000;
+
+  padding: 30px;
+
+}
+#watch {
+  color: #FFF000;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial,Tahoma;
+}*/
+
+/*
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+  background: #272727;
+
+}
+.container {
+  width: 90%;
+  height: 1000px;
+  border: 1px solid #ca133e;
+  margin: 20px auto;
+  background: #CCC;
+  overflow: hidden;
+
+}
+.left {
+
+     width: 50%;
+     height: 200px;
+     background: #F00;
+     padding: 90px;
+     float: left;
+}
+.right {
+  width: 50%;
+  height: 200px;
+  background: #00F;
+  padding: 90px;
+  float: left;
+}
+
+span {
+  text-align: center;
+  border: 1px solid #000;
+  padding: 20px;
+  background: #CCC;
+
+}
+button{
+  overflow: hidden;
+  background: #080;
+  color: #FFF;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-family: Arial,Tahoma;
+  margin: 50px 250px auto;
+
+}
+*/

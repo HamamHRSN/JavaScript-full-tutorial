@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript_DOM</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="Dom/styleDom.css">
+</head>
+<body id="body">
+   <!-- //
+            [ Intro ]
+
+      DOM = Document Object Model 
+
+      What Is DOM? = Programming Interface For HTML, XML
+
+  // --> 
+    <!--=============================================================================-->
+    <!-- // Find Element By [ ID , Class , Tag ] // -->
+    <!--=============================================================================-->
+    
+    <!-- // Ex. document.getElementById() // -->
+    <!--
+
+    <div id="test">Hello From Div Test</div>
+    
+    -->
+    
+    <!--=============-->
+    <!-- // Ex. document.getElementsByTagName() // -->
+    <!--
+    <p>This Is P0</p>
+    <div id="test">Hello From First Div Test</div>
+    <div id="test2">Hello From Second Div Test</div>
+    <p>This Is P1</p>
+    <p>This Is P2</p>
+    <p>This Is P3</p>
+    -->
+    <!--=============-->
+    
+    <!-- // Ex. document.getElementsByClassName() // -->
+    <!--
+    <div class="test">Hello From First Div Test</div>
+    <div class="test">Hello From Second Div Test</div>
+    <p>This Is P</p>
+    <p class="test">This Is P</p>
+    <p>This Is P</p>
+    <p>This Is P</p>
+    -->
+    
+    
+    <!-- // Ex. document.querySelectorAll() // -->
+    <!--
+    <div class="test">Hello From First Div Test</div>
+    <div class="test">Hello From Second Div Test</div>
+    <p id="ex">This Is P</p>
+    <p class="test">This Is P</p>
+    <p>This Is P</p>
+    <p id="ex">This Is P</p>
+    <p>This Is P</p>
+    -->
+    
+    <!--=============================================================================-->
+    <!-- // Find Element By Object Collection // -->
+    <!--=============================================================================-->
+    
+    <!-- // document.title // -->
+    <!--
+    <div id="show"></div>
+    -->
+    
+    <!-- // document.images // -->
+    <!--
+    <div id="show"></div>
+    <img src="http://placehold.it/100/100"/>
+    <img src="http://placehold.it/200/DDD"/>
+    <img src="http://placehold.it/100/EEE"/>
+    <img src="http://placehold.it/200/EEE"/>
+     -->
+    
+    <!-- // document.forms // -->
+    <!--
+    <div id="show"></div>
+    <form>
+        <input type="text" name="x1" value="IN-x1">
+        <input type="text" name="x2" value="IN-x2">
+    </form>
+    <form>
+        <input type="text" name="z1" value="IN-z1">
+        <input type="text" name="z2" value="IN-z2">
+    </form>
+    -->
+    
+    <!-- // document.body // -->
+    <!--
+    <div id="show">HAMAM</div>
+    -->
+    
+    <!-- // document.anchors // -->
+    <!--
+    <div id="show"></div>
+    <a name="google">Google</a>
+    <a name="facebook">Facebook</a>
+    <a name="youtube">YouTube</a>
+    -->
+    
+    <!-- // document.links // -->
+    <!--
+    <div id="show"></div>
+    <a href="#">Google</a>
+    <a href="#">Facebook</a>
+    <a href="#">YouTube</a>
+    -->
+    
+    <!--=============================================================================-->
+    <!-- // Set / Get Node Element Content // -->
+    <!--=============================================================================-->
+    
+    <!--
+    <div id="main">This Is Main Div.<span>Text In Span</span></div>
+    -->
+
+    <!--=============================================================================-->
+    <!-- // Set / Get Element Attribute Value // -->
+    <!--=============================================================================-->
+    
+    <!-- //
+       Start Work Area:
+       Element.Attribute = Direct Method
+     // -->
+    
+    
+    <!--
+    <div id="" class="">This Is Div</div>
+    <img src="" alt="">
+    -->
+    
+    
+    <!--=============================================================================-->
+    <!-- // Has & Remove Attribute // -->
+    <!--=============================================================================-->
+   
+    <!--
+    <img src="" >
+    -->
+    
+    <!--
+    <img src="" alt="">
+    -->
+    
+    
+    <!--=============================================================================-->
+    <!-- // ClassList [Item, Contains, Length] // -->
+    <!--=============================================================================-->
+    
+    <!--
+    <div id="main" class="show cool main-div">Our Main Div</div>
+    -->
+    
+    <!--
+    <div id="main" class="show cool main-div hamam">Our Main Div</div>
+    -->
+    
+    
+    <!--=============================================================================-->
+    <!-- // ClassList [Add, Remove, Toggle] // -->
+    <!--=============================================================================-->
+    
+    <!--
+    <div id="main" class="main-div hamam">Our Main Div</div>
+    -->
+    
+    <!--
+    <div id="main" class="show cool main-div hamam">Our Main Div</div>
+    
+    <button>Add Class</button>
+    -->
+    
+    <!--
+    <div id="main" class="show cool main-div hamam">Our Main Div</div>
+    
+    <button>Remove Class</button>
+    -->
+    
+    <!--
+    <div id="main" class="show cool main-div hamam">Our Main Div</div>
+    
+    <button>Toggle Class</button>
+    -->
+    
+    <!--
+    <div id="ourtext" class="hidden">This Is Our Text</div>
+    <button>Show/Hide Text</button>
+    -->
+    
+    <!--=============================================================================-->
+    <!-- // Element Children  |  Children , ChildNodes // -->
+    <!--=============================================================================-->
+    
+    <!--
+    <div id="main">
+        Main Perant
+        <h2>Heading</h2>
+        Testing
+        <p>Good Paragraph</p>
+    </div>
+    -->
+    
+    <!--
+    <div id="main">
+        Main Perant
+        <h2>Heading</h2>
+        Testing
+        <p class="test">Good Paragraph</p>
+        <1-- Comment --<
+    </div>
+    -->
+    
+    
+    
+    <!--======================================================================================-->
+    <!-- // Element Children  |  [ First / Last ] Children , [ First / Last ] ElementChild // -->
+    <!--======================================================================================-->
+    
+    <!--
+    <div id="main">
+        Main Perant  !-- Text Node --
+        <h2>Heading</h2>  !-- Element Node --
+        Testing
+        <p class="test">Good Paragraph</p>
+        !-- Comment --
+        <h3>Last</h3></div>
+    -->
+    
+    
+    
+    <!--======================================================================================-->
+    <!-- // Element Children  |  AppendChild  // -->
+    <!--======================================================================================-->
+    
+    <!--
+    <div id="main"></div>
+    -->
+    
+    <!--
+    <div id="container"></div>
+    -->
+    
+    
+    <!--======================================================================================-->
+    <!-- // Element Children  |  InsertBefore  // -->
+    <!--======================================================================================-->
+    
+    <!--
+    <div id="main">
+       <p>This Is Our HTML P</p>
+    </div>
+    -->
+    
+    
+    <!--======================================================================================-->
+    <!-- //  Element Children  |   RemoveChild     // -->
+    <!--======================================================================================-->
+    
+	<!--
+	<div id="main">
+	   <p>This Is Our HTML P</p>
+       <div>This Is Our HTML Div</div>
+	   <p>This Is Our HTML P</p>
+    </div>
+	-->
+	
+	
+    <!--
+    <div id="main"><p>This Is Our HTML P</p>
+       <div>This Is Our HTML Div</div>
+	   <p>This Is Our HTML P</p>
+    </div>
+    -->
+	
+	<!--
+	<div id="main">
+		First Text
+	   <p>This Is Our HTML P</p>
+		Second Text
+       <div>This Is Our HTML Div</div>
+		Third Text
+	   <p>This Is Our HTML P</p>
+		Last Text
+    </div>
+    -->
+    
+    <!--======================================================================================-->
+    <!-- //    Node [Name , Value , Type]       // -->
+    <!--======================================================================================-->
+    
+    <!--
+	<div id="main">
+		First Text
+	   <p>This Is Our HTML P</p>
+		Second Text
+       <div>This Is Our HTML Div</div>
+		Third Text
+	   <p>This Is Our HTML P</p>
+		Last Text
+    </div>
+	-->
+	
+    <!--
+	<div id="main">
+		First Text
+	   <p>This Is Our HTML P</p>
+		Second Text
+       <div><span class="cool">Cool Text</span></div>
+		Third Text
+	   <p>This Is Our HTML P</p>
+		Last Text
+    </div>
+	-->
+    
+    
+    <!--======================================================================================-->
+    <!-- //   CloneNode   // -->
+    <!--======================================================================================-->
+    
+ 
+	<!--
+	<div id="main">
+	   <p id="para" class="testing">This Is Our Main P</p>
+	</div>
+	
+	<div id="new">
+	
+	</div>
+    -->
+    
+	
+    <!--======================================================================================-->
+    <!-- //  ParentNode , ParentElement   // -->
+    <!--======================================================================================-->
+    
+	<!--
+    <div id="main">
+	   <button>Close</button>
+	</div>
+    -->
+    
+    <!--======================================================================================-->
+    <!-- //     Next , Previous [ Sibling ]      // -->
+    <!--======================================================================================-->
+    
+    <!--
+	<div id="main">
+		First Text
+	   <p>This Is Our HTML P</p>
+		Second Text
+       <div>This Is Our HTML Div</div>
+		Final Text
+    </div>
+    -->
+    
+    <!--======================================================================================-->
+    <!-- //  Focus , Blur   // -->
+    <!--======================================================================================-->
+    
+    <!--
+	<form id="main">
+	   <input id="myInput" type="text">
+	</form>
+	<button>Remove Focus</button>
+    -->
+    
+    <!--======================================================================================-->
+    <!-- //    Click      // -->
+    <!--======================================================================================-->
+    
+	<!--
+    <div id="main">
+	   <button>Hide My Div</button>
+	</div>
+    -->
+	
+	
+	<!--======================================================================================-->
+    <!-- //  AddEventListener  ,  removeEventListener   // -->
+    <!--======================================================================================-->
+	
+	<!-- Game -->
+	
+	<!--
+	<button id="power">PowerUp</button>
+	<button id="main">Eat Monsters</button>
+	<div id="monster1">Monster1</div>
+	<div id="monster2">Monster2</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //   Contains     // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">
+	    <div>
+	       <p>This Is <span id="myChild">Paragraph</span></p>
+		</div>
+	</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //   Client [ Height , Width ]      // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main" class="custom">
+	    My Main Div
+	</div>
+	-->
+	
+	<!--======================================================================================-->
+    <!-- //     Scroll [ Height , Width ]      // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main" class="custom">
+	    <div class="child">
+		    My Child Div
+		</div>
+	</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //   Offset [ Height , Width ]     // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main" class="custom">
+	    <div class="child">
+		    My Child Div
+		</div>
+	</div>
+	-->
+	
+	<!--======================================================================================-->
+    <!-- //  Scroll [ Top , Left ]   // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main" class="custom1">
+		    My Div
+	</div>
+	-->
+	
+	<!--======================================================================================-->
+    <!-- //   Scroll [ Top , Left ]    // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main" class="custom2">
+		    My Div
+	</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //    Style     // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">
+		    My Div
+	</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //    Document [ InputEncoding , LastModified ,  URL  ]    // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">
+		    My Div
+	</div>
+	-->
+	
+
+	<!--======================================================================================-->
+    <!-- //   Document   Create [ Element , Text ,  Comment ]    // -->
+    <!--======================================================================================-->
+	
+	<!-- Useing Just Javascript To Create Every Thing In HTML --> 
+	
+	
+	
+	<!--======================================================================================-->
+    <!-- //    Create Attribute     // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">
+	
+	</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //     Events | How To       // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">This Is My Div</div>
+	<button onclick="changeMe()">Click Here</button>
+	-->
+	
+	<!--
+	<div id="main">This Is My Div</div>
+	<button>Click Here</button>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //   Events [onLoad , onscroll, onresize]      // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">This Is My Div</div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //   Events [onfocus , onblur, onsubmit]    // -->
+    <!--======================================================================================-->
+    
+	<!--
+    <form id="main">
+	     <input id="input" type="text">
+	     <input type="submit" value="Go">
+	</form>
+    <div id="notice"></div>
+	-->
+	
+	
+	<!--======================================================================================-->
+    <!-- //    Events [onclick , onmouse]      // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<div id="main">Click</div>
+	<div id="notice"></div>
+	-->
+	
+	<!--======================================================================================-->
+    <!-- //    OnKey [Down , Press , Up]     // -->
+    <!--======================================================================================-->
+	
+	<!--
+	<form id="main">
+	     <input id="input" type="text" autocomplete="off">
+	</form>
+	<div id="notice"></div>
+	-->
+    
+    <!--============================== End Work Area ================================--> 
+    <!--=============================================================================--> 
+    <script src="Dom/mainDom.js"></script>
+</body>
+</html>

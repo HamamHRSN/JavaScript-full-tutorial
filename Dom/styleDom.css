@@ -1,0 +1,118 @@
+/*
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+
+/*============================================*/
+
+/* ======  Element Toggle =====  */
+
+/*
+
+.hidden {
+        
+        visibility: hidden
+}  
+
+*/
+
+/*============================================*/
+
+/* ======  Client [ Height , Width ] =====  */
+/* ======  Scroll [ Height , Width ] =====  */
+/* ======  offset [ Height , Width ] =====  */
+
+/*
+.custom {
+		width: 300px;
+	    height: 300px;
+		* padding: 20px; *
+		background-color: #EEE;
+		border: 10px solid #CCC;
+		margin: 30px;
+		overflow: scroll;
+}
+
+.child {
+		
+		height: 800px;
+		width: 800px;
+	    background-color: #00F;
+	    color: #FFF;
+}
+*/
+
+/*============================================*/
+
+/* ======  Scroll [ Top , Left ] =====  */
+
+/*
+body {
+	
+	height: 4000px;
+	width: 4000px;
+}
+
+.custom1 {
+	
+	width: 300px;
+	height: 300px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background-color: #EEE;
+	color: #F00;
+}
+
+.active {
+	
+	background-color: #00F;
+}
+*/
+
+/*============================================*/
+
+/* ======  Client [ Top , Left ] =====  */
+
+/*
+.custom2 {
+	
+	width: 300px;
+	height: 300px;
+	border: 20px solid #00F;
+	background-color: #000;
+	color: #FFF;
+	overflow: scroll;
+	direction: rtl;
+}
+*/
+
+/*============================================*/
+
+/* ====== Events [onLoad , onscroll, onresize]  =====  */
+
+/*
+body {height: 4000px}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

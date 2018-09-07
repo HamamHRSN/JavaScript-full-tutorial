@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JQuery Tretorial</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="jqueryTest.css" />
+</head>
+<body>
+<!--
+  <div id="clock">
+      <span id="hour"></span>:
+      <span id="minut"></span>:
+      <span id="second"></span>
+  </div>
+  <span id="counter"></span>
+
+  <script type="text/javascript">
+
+    var myClock = document.getElementById('clock'),
+        myHour = document.getElementById('hour'),
+        myMinut = document.getElementById('minut'),
+        mySecond = document.getElementById('second');
+
+      var  hour   = "24",
+           minut  = "59",
+           second = 119;
+
+           my
+
+        myHour.innerHTML = hour;
+        myMinut.innerHTML = minut;
+        /*mySecond.innerHTML = sec;*/
+
+      var  sec = 1,
+           min = 60 * sec,
+           hr =  3600 / min;
+        console.log(hr + " : " + min + " : " + sec);
+
+
+function countToSecond() {
+  for (sec = 1; sec < 60; sec++){
+    console.log(  sec++ );
+    if (sec === 59) {
+      return sec = 0;
+      mySecond.innerHTML = sec;
+
+    }
+  }
+
+}
+  </script>
+-->
+<!--
+<div class="clock">
+   <div id="watch"></div>
+</div>
+<script type="text/javascript">
+
+function showTime() {
+  "use strict";
+
+  var myWatch = document.getElementById('watch'),
+      timeNow = new Date(),
+      hours = timeNow.getHours(),
+      minutes = timeNow.getMinutes(),
+      seconds = timeNow.getSeconds();
+
+      if (hours < 10) {
+
+        hours = "0" + hours;
+
+      }
+      if (minutes < 10) {
+
+        minutes = "0" + minutes;
+
+      }
+      if (seconds < 10) {
+
+        seconds = "0" + seconds;
+
+      }
+
+  myWatch.textContent = hours + " : " + minutes + " : " + seconds;
+
+}
+
+window.onload = function () {
+  "use strict";
+setInterval(showTime, 1000);
+};
+
+
+</script>
+-->
+
+  <!--  First Ex. -->
+  <!--
+  <button>Click</button>
+  <p>This is a test Paragraph</p>
+  <span>This is span</span>
+  -->
+  <!--  2 Ex. -->
+  <!--
+  <button>Fade</button>
+  <div>This is a test Div</div>
+  <span>The Div Now Opacity 100%</span>
+  -->
+  <!--  3 Ex. -->
+  <!--
+  <div class="open">Click here to slide</div>
+  <div class="box">This is Box</div>
+   -->
+   <!--  4 Ex. -->
+   <!--
+   <div class="box">
+       <div class="head">This Is Head Box</div>
+       <h2>This Is a h2 In Box</h2>
+       <p>This Is Paragraph Of The Box This Is Paragraph Of The Box This Is Paragraph Of The Box</p>
+       <div class="bottom">This Is Bottom Box</div>
+   </div>
+  -->
+  <!--  5 Ex. -->
+  <!--
+  <button>Stop</button>
+  <div>This Is Div</div>
+  -->
+
+  <!-- 6 Ex -->
+  <!--
+  <input type="text" name="fild" />
+  <span>+</span>
+  -->
+  <!--
+  <div class="custom">
+    This Is Custom Div
+  </div>
+  <button type="button" name="button">Trigger Custom Event</button>
+  -->
+
+  <!--
+<div class="custom-design">
+   This Is Div For Custom Design
+</div>
+<a href="#">Change Custom Div Design</a>
+-->
+
+<!--
+<input type="text" name="heading">
+<textarea name="commenting" rows="8" cols="80"></textarea>
+
+<select>
+  <option value="#000">Black</option>
+  <option value="#F00">Red</option>
+  <option value="#00F">Blue</option>
+  <option value="#FF0">Yellow</option>
+  <option value="#080">Green</option>
+</select>
+
+<div>
+  <h3></h3>
+  <p></p>
+</div>
+-->
+<!--
+<section>
+  <h2>Hello In Our Website Test</h2>
+</section>
+<div class="hidden">
+  <h2>Sorry This Application Is Not Working In Mobile</h2>
+</div>
+-->
+<!--
+<div class="goUp">
+  UP
+</div>
+-->
+
+<!--Chack The Mouse Move In Screen-->
+<!--<span></span>-->
+<!--
+<div class="circle"></div>
+-->
+
+<!--
+<form>
+  <p>Please Type "confirm" To delete  Your Account</p>
+  <input type="text" name="username">
+  <input type="submit">
+</form>
+<span></span>
+-->
+
+<!--
+<button type="button" name="button">Click</button>
+<span>Hello Hamam</span>
+<div></div>
+-->
+<!--
+<div class="container">
+
+<div class="left"> <span id="left">Left</span> </div>
+<div class="right"> <span id="right">Right</span> </div>
+
+<button type="button" name="button">Move To</button>
+
+</div>
+-->
+
+<div class="container">
+  <div class="firstDivInAllTheWeb">
+    <header>
+      <nav>
+        <div class="logoFullDiv">
+
+        </div>
+        <div class="AllLinksDiv">
+          <ul>
+             <li><div><i class="fa fa-controls"></i><a href="controlsSection"><span>Controls Page</sapn></a></div></li>
+                      <li><div><i class=""></i><a href="itemsSection"><span>items Page</sapn></a></div></li>
+                          <li><div><i class=""></i><a href="usersSection"><span>Users Page</sapn></a></div></li>
+                              <li><div><i class=""></i><a href="projectesSection"><span>projectes Page</sapn></a></div></li>
+                                  <li><div><i class=""></i><a href="myHisturySection"><span>History Page</sapn></a></div></li>
+                                      <li><div><i class=""></i><a href="systemsSection"><span>Systems Page</sapn></a></div></li>
+                                          <li><div><a href="Section"><span>DashBord Page</sapn></a></div></li>
+             <li><div><i class=""></i><a href="moreInformationsSection"><span>Informations Page</sapn></a></div></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>
+<!--=======================================-->
+<script src="jquery-3.2.0.min.js"></script>
+<script src="jqueryTest.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+[
+   { 
+
+   	"firstName"  : "Hamam",
+   	"secondName" : "Hamou",
+   	"age"        : "34",
+   	"carrer"     : {
+   	                "fashion" : "Zara",
+   	                "realSatat": "The First Group",
+   	                "Media"    : "Sold Out",
+   	                "Programming" : ["HTML5", "CSS3", "PHP", "MySQL-PDO", "Javascript", "c#"]
+                   }
+   },
+
+   {
+
+    "statusM"    : "Marred",
+   	"wifeName"   : "Rouaa Aljebbeh",
+   	"wifeAge"    : "27",
+   	"child"      : {
+   	                  "ChildName" : ["Salma Hamou","Naya Hamou"],
+   	                  "ChildAge" : ["5","1"]
+                   },
+    "brother"    : ["Tarek", "Alaa", "Omar", "Khaled"]
+
+   }
+
+]
