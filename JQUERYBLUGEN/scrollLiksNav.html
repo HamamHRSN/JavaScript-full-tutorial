@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pyaculies</title>
+<style media="screen">
+/*Start Main Rouls*/
+*{
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+  font-family: Arial,Tahoma;
+}
+
+.block {
+  height: 1200px;
+}
+/*End Main Rouls*/
+
+/* Strat Navbar */
+.navbar {
+  background: #333;
+  display: block;
+  list-style: none;
+  text-align: center;
+
+}
+.navbar li {
+  display: inline-block;
+
+  padding: 20px;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #EEE;
+}
+/* end Navbar */
+
+</style>
+
+  </head>
+  <body>
+
+<!-- start navbar -->
+        <ul class="navbar" >
+          <li><a href="#">Home</a></li>
+          <li><a href="#" data-scroll="about-us">About Us</a></li>
+          <li><a href="#" data-scroll="services">Services</a></li>
+          <li><a href="#" data-scroll="solutions">Solutions</a></li>
+          <li><a href="#" data-scroll="products">Products</a></li>
+          <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+        </ul>
+<!-- end navbar -->
+      <!-- starts all sections -->
+<!-- start section -->
+<div id="home" class="block">
+   <h1>Home</h1>
+</div>
+<!-- ends section -->
+
+<!-- start section -->
+<div id="about-us" class="block">
+   <h1>About Us</h1>
+</div>
+<!-- ends section -->
+
+<!-- start section -->
+<div id="services" class="block">
+   <h1>Services</h1>
+</div>
+<!-- ends section -->
+
+
+<!-- start section -->
+<div id="solutions" class="block">
+   <h1>Solutions</h1>
+</div>
+<!-- ends section -->
+
+<!-- start section -->
+<div id="products" class="block">
+   <h1>Products</h1>
+</div>
+<!-- ends section -->
+
+<!-- start section -->
+<div id="contact-us" class="block">
+   <h1>Contact Us</h1>
+</div>
+<!-- ends section -->
+      <!-- ends all sections -->
+
+
+<script type="text/javascript" src="jquery-3.2.0.min.js">
+</script>
+<script type="text/javascript">
+
+/*global console*/
+$(function() {
+
+'use strict';
+/*
+// bring the linke name To The console
+
+$(".navbar li a").click(function() {
+
+  window.console.log($(this).data('scroll'));
+
+});
+*/
+// Smoothly Scroll To Element
+
+$(".navbar li a").click(function(event) {
+
+  event.preventDefault();
+
+  $("html, body").animate({
+
+    scrollTop: $('#' + $(this).data('scroll')).offset().top
+
+  }, 1000);
+
+
+});
+
+});
+
+
+</script>
+  </body>
+</html>

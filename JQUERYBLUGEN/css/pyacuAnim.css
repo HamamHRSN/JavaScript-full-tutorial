@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#insideBorder {
+
+	perspective: 600px;
+	transform-style:preserve-3d; 
+	cursor: pointer;
+		transition: all .5 linear;
+
+}
+#insideBorder:hover {
+
+
+	transform: rotateZ(60deg) skew(30deg);
+	transition: all .5 linear;
+}

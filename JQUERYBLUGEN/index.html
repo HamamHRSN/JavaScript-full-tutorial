@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pyaculies</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body style="padding-top: 80px;">
+<nav>
+    <div class="logocontainer">
+    <div class="logoPyaculies">
+      <ul>
+           <li><a href="#" style="color:#ca133e;">P</a></li>
+           <li><a href="#">Y</a></li>
+           <li><a href="#">A</a></li>
+           <li><a href="#">C</a></li>
+           <li><a href="#">U</a></li>
+           <li><a href="#">L</a></li>
+           <li><a href="#">I</a></li>
+           <li><a href="#">E</a></li>
+           <li><a href="#">S</a></li>
+      </ul>
+    </div>
+    </div>
+
+<!-- start navbar -->
+        <ul class="navbar" >
+          <li><a href="#" data-scroll="home" data-link="Home">Home</a></li>
+          <li><a href="#" data-scroll="about-us" data-link="About Us">About Us</a></li>
+          <li><a href="#" data-scroll="services" data-link="Services">Services</a></li>
+          <li><a href="#" data-scroll="solutions" data-link="Solutions">Solutions</a></li>
+          <li><a href="#" data-scroll="products" data-link="Products">Products</a></li>
+          <li><a href="#" data-scroll="contact-us" data-link="Contact Us">Contact Us</a></li>
+        </ul>
+<!-- end navbar -->
+</nav>
+
+
+  <img src="keyboard.jpg" width="100%" height="400px" style="margin-top: 12px;">
+
+  <div class="fixed-menu">
+    <i class="fa fa-gear fa-lg" style="
+    position: absolute;
+    top: 27px;
+    right: -30px;
+    width: 30px;
+    height: 48px;
+    background-color: #ca133e;
+    padding: 16px 4px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+     "></i>
+    <h3>Change Colors</h3>
+      <ul class="change-colors">
+        <li data-color="blue"></li>
+        <li data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="yellow"></li>
+      </ul>
+
+<button id="menuButton">Menu</button>
+<ul class="mainMenu">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JAVASCRIPT</li>
+</ul>
+      
+    </div>
+  </div>
+  <!--   
+    <div class="content">
+        <div class="all-cer">
+            <ul> القطاعات الاستثمارية
+                <li><a href="#">قطاع الصحة</a></li><hr>
+                <li><a href="#">قطاع التعليم</a></li><hr>
+                <li><a href="#">قطاع اللإعلام</a></li><hr>
+                <li><a href="#">قطاع الصناعة</a></li><hr>
+                <li><a href="#">قطاع الزراعة</a></li><hr>
+                <li><a href="#">قطاع التجارة</a></li><hr>
+                <li><a href="#">قطاع البناء</a></li><hr>
+                <li><a href="#">قطاع الأعمال المهنية</a></li><hr>
+                <li><a href="#">قطاع النقل</a></li><hr>
+                <li><a href="#">قطاع الاتصالات</a></li><hr>
+                <li><a href="#">قطاع التأمين</a></li><hr>
+                <li><a href="#">قطاع البنكي</a></li><hr>
+                <li><a href="#">قطاع السياحة</a></li><hr>
+                <li><a href="#">قطاع الفنون</a></li><hr>
+                <li><a href="#">قطاع الرياضة</a></li><hr>
+                <li><a href="#">قطاع القضاء</a></li><hr>
+                <li><a href="#">قطاع الأمن والسلامة</a></li><hr>
+                <li><a href="#">قطاع الموارد العامة</a></li><hr>
+                <li><a href="#">قطاع الأبحاث والتطوير</a></li><hr>
+            </ul>
+        </div>
+    </div>
+   
+    <br>
+    <ul>قطاع الصحة
+        <li><a href="#">الأطباء</a></li>
+        <li><a href="#">الممرضيين</a></li>
+        <li><a href="#">المستوصفات</a></li>
+        <li><a href="#">المشافي</a></li>
+        <li><a href="#">المراكز الطبية</a></li>
+        <li><a href="#">العيادات</a></li>
+        <li><a href="#">الصيدليات</a></li>
+        <li><a href="#">التجهيزات الطبية</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+     <ul>قطاع التعليم
+        <li><a href="#">رياض الأطفال</a></li>
+        <li><a href="#">المدارس</a></li>
+        <li><a href="#">الجامعات</a></li>
+        <li><a href="#">المعاهد</a></li>
+        <li><a href="#">المكتبات</a></li>
+        <li><a href="#">الدورات التثقيفية والتوعوية</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الأعلام
+        <li><a href="#">تلفزيون</a></li>
+        <li><a href="#">راديو</a></li>
+        <li><a href="#">مواقع التواصل</a></li>
+        <li><a href="#">مسرح</a></li>
+        <li><a href="#">الدعاية واللإعلان</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الصناعة
+        <li><a href="#">صناعة المواد الغذائية</a></li>
+        <li><a href="#">صناعة المواد الطبية</a></li>
+        <li><a href="#">صناعة الغزل والنسيج</a></li>
+        <li><a href="#">صناعة المواد الصناعية</a></li>
+        <li><a href="#">صناعة المواد الطبيعية</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الزراعة
+        <li><a href="#">الزراعة الطبيعية</a></li>
+        <li><a href="#">الزراعة البلاستيكية</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع التجارة
+        <li><a href="#">الإستراد والتصدير</a></li>
+        <li><a href="#">البيع بالتجزئة</a></li>
+        <li><a href="#">البيع بالجملة</a></li>
+        <li><a href="#">التجارة الحرة</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع البناء
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+     <br>
+    <ul>قطاع الأعمال المهنية
+        <li><a href="#">الديكور</a></li>
+        <li><a href="#">الحلاقة</a></li>
+        <li><a href="#">الخبازة</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع النقل
+        <li><a href="#">البريد</a></li>
+        <li><a href="#">النقل البري</a></li>
+        <li><a href="#">النقل الجوي</a></li>
+        <li><a href="#">النقل البحري</a></li>
+        <li><a href="#">النقل اللإلكتروني</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الاتصالات
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع التأمين
+        <li><a href="#">التأمين على الأفراد</a></li>
+        <li><a href="#">التأمين على الممتلكات</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع البنكي
+        <li><a href="#">البنوك</a></li>
+        <li><a href="#">المصارف</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع السياحة
+        <li><a href="#">المهرجانات والفعاليات</a></li>
+        <li><a href="#">السياحة والسفر</a></li>
+        <li><a href="#">الفنادق</a></li>
+        <li><a href="#">الشقق الفندقية</a></li>
+        <li><a href="#">المطاعم والمقاهي</a></li>
+        <li><a href="#">النوادي الليلية</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الفنون
+        <li><a href="#">التمثيل</a></li>
+        <li><a href="#">الموسيقا</a></li>
+        <li><a href="#">الرسم</a></li>
+        <li><a href="#">النحت</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الرياضة
+        <br>
+        <li><a href="#">العاب القوى</a>
+            <ul>
+                <li><a href="#">الجري</a></li>
+                <li><a href="#">المشي</a></li>
+                <li><a href="#">الوثب الطويل</a></li>
+                <li><a href="#">الوثب الثلاثي</a></li>
+                <li><a href="#">الوثب العالي</a></li>
+                <li><a href="#">القفز بالزانة</a></li>
+            </ul>
+        </li>
+        <br>
+        <li><a href="#">الهوكي</a></li>
+        <li><a href="#">كرة القدم</a></li>
+        <li><a href="#">كرة القدم الأميريكية</a></li>
+        <li><a href="#">الركبي</a></li>
+        <li><a href="#">الكريكيت</a></li>
+        <li><a href="#">البيسبول</a></li>
+        <li><a href="#">كرة السلة</a></li>
+        <li><a href="#">كرة اليد</a></li>
+        <li><a href="#">كرة الماء</a></li>
+        <li><a href="#">الكرة الطائرة</a></li>
+        <li><a href="#">كرة التنس</a></li>
+        <li><a href="#">كرة الريشة</a></li>
+        <br>
+        <li><a href="#">السباحة</a>
+            <ul>
+               <li><a href="#">الغطس</a></li>
+               <li><a href="#">الرقص المائي</a></li> 
+            </ul> 
+        </li>
+        <br>
+        <li><a href="#">الرماية</a></li>
+        <br>
+        <li><a href="#">الفروسية</a></li>
+        <li><a href="#">البولو</a></li>
+        <br>
+        <li><a href="#">الفنون القتالية</a>
+            <ul>
+                <li><a href="#">الكاراتيه</a></li>
+                <li><a href="#">الجودو</a></li>
+            </ul>  
+        </li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع القضاء
+        <li><a href="#">المحاكم</a></li>
+        <li><a href="#">القضاة</a></li>
+        <li><a href="#">المحاميين</a></li>
+        <li><a href="#">معقبي المعاملات</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الأمن والسلامة
+        <li><a href="#">مراكز الشرطة</a></li>
+        <li><a href="#">مراكز الدفاع المدني</a></li>
+        <li><a href="#">مراكز الاطفاء</a></li>
+        <li><a href="#">الإسعاف</a></li>
+        <li><a href="#">الأمراض والأوبئة</a></li>
+        <li><a href="#">الأمن الخاص</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الموارد العامة
+        <li><a href="#">النفط</a></li>
+        <li><a href="#">الحديد</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <br>
+    <ul>قطاع الابحاث والتطوير
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+
+        
+        
+        
+    
+    
+     </div> 
+    <h3>Important Links</h3>
+    Testing Links
+  </div>
+
+-->
+<!--
+ <div>
+  <div class="logo-box animated-pyaculies">
+    <div class="logoBorder">
+      <div class="LogoMainCircle"></div>
+      <ul>
+           <li><a href="#" style="color:#ca133e;">P</a></li>
+           <li><a href="#">Y</a></li>
+           <li><a href="#">A</a></li>
+           <li><a href="#">C</a></li>
+           <li><a href="#">U</a></li>
+           <li><a href="#">L</a></li>
+           <li><a href="#">I</a></li>
+           <li><a href="#">E</a></li>
+           <li><a href="#">S</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+-->
+<!--
+<svg width="100%" height="400px">
+  <rect x="0" y="0" width="100%" height="100%" rx="" ry="" fill="#000" />// MainBackground 
+  <rect x="40%" y="50px" width="300" height="300" rx="" ry="" fill="#ca133e" /><//MainBackgroundLogo
+  <rect x="40%" y="50px" width="300" height="300" rx="" ry="" stroke-style="#EEE" stroke-width="20" fill="#ccc"/>//MainBackgroundLogo
+</svg>
+-->
+      <!-- starts all sections -->
+<!-- start Home section -->
+<div id="home" class="block">
+   <h1>Home</h1>
+
+
+<div class="popups">
+
+  <span class="show-popup" data-popup=".main-popup">Main Show Popup</span>
+  <span class="show-popup" data-popup=".second-popup">Second Show Popup</span>
+  <span class="show-popup" data-popup=".linkes-popup">Show linkes Popup</span>
+  <!--
+   <button class="show-popup" data-popup=".main-popup">First Show Popup</button>
+   <button class="show-popup" data-popup=".second-popup">Second Show Popup</button>
+   <button class="show-popup" data-popup=".linkes-popup">Show linkes Popup</button>
+  -->
+</div>
+
+
+<!-- start All Button -->
+<div class="AllButton"  style="margin-bottom: 40px;">
+<!-- start Buttons with  Effects form-left -->
+ <div class="buttons-effects">
+  <button class="button-effect button-link">
+    <a href="#" data-link="Button Link" >Button Link</a><!-- Buttom Or Link data-link="Cube Link"-->
+  </button>
+ </div>
+<!-- ends Buttons with  Effects form-left -->
+
+<!-- start Buttons with  Effects form-left -->
+ <div class="buttons-effects">
+  <button class="button-effect form-left">
+    <span></span>
+    <span>Form Left</span>
+  </button>
+ </div>
+<!-- ends Buttons with  Effects form-left -->
+<!-- start Buttons with  Effects form-top -->
+ <div class="buttons-effects">
+  <button class="button-effect form-top">
+    <span></span>
+    <span>Form Top</span>
+  </button>
+ </div>
+<!-- ends Buttons with  Effects form-top -->
+<!-- start Buttons with  Effects-->
+ <div class="buttons-effects">
+  <button class="button-effect border-left">
+    <span></span>
+    <span>Border Left</span>
+  </button>
+ </div>
+<!-- ends Buttons with  Effects-->
+
+<!-- start Buttons with  Effects-->
+ <div class="buttons-effects">
+  <button class="button-effect border-top">
+    <span></span>
+    <span>Border Top</span>
+  </button>
+ </div>
+<!-- ends Buttons with  Effects-->
+</div>
+<!-- end All Buttom -->
+<!-- start Gallery -->
+<div class="gallery">
+  <div class="master-img">
+    <i class="skin-background fa fa-chevron-left fa-lg"></i>
+    <i class="skin-background fa fa-chevron-right fa-lg"></i>
+    <img src="business-02.jpg" alt="">
+  </div>
+  <div class="thumnbnails">
+    <img class="selected" src="business-02.jpg" alt="">
+    <img src="business-process.jpg" alt="">
+    <img src="business-01.jpg" alt="">
+    <img src="business-icons.jpg" alt="">
+    <img src="business-i.jpg" alt="">
+    <img src="green-business.jpg" alt="">
+     <img src="business-process.jpg" alt="">
+     <img src="business-icons.jpg" alt="">
+    <img src="business-i.jpg" alt="">
+    <img src="green-business.jpg" alt="">
+     <img src="business-process.jpg" alt="">
+
+  </div>
+</div>
+
+<!-- end Gallery -->
+<!-- start Progress Bar -->
+<div class="progress">
+<div class="animated-progress  first-pro">
+    <svg xmlns="http://www.w3.org/2000/svg" style="  background-image: url(if_php-logo_1012812.svg);
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                top: 33px;
+                left: 15px;
+             "></svg>
+  <span data-progress="80"></span>
+</div>
+<!-- end Progress Bar -->
+<span class="perc"></span>
+<!-- start Progress Bar -->
+<div class="animated-progress second-pro">
+  <svg xmlns="http://www.w3.org/2000/svg" style="  background-image: url(if_php-logo_1012812.svg);
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                top: 109px;
+                left: 15px;
+             "></svg>
+  <span data-progress="60"></span>
+</div>
+<!-- end Progress Bar -->
+<span class="perc"></span>
+<!-- start Progress Bar -->
+<div class="animated-progress  third-pro">
+  <svg xmlns="http://www.w3.org/2000/svg" style="  background-image: url(if_php-logo_1012812.svg);
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                bottom: 109px;
+                left: 15px;
+             "></svg>
+  <span data-progress="90"></span>
+</div>
+<!-- end Progress Bar -->
+<span class="perc"></span>
+<!-- start Progress Bar -->
+<div class="animated-progress fourth-pro">
+  <svg xmlns="http://www.w3.org/2000/svg" style="  background-image: url(if_php-logo_1012812.svg);
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                bottom: 33px;
+                left: 15px;
+             "></svg>
+  <span data-progress="70"></span>
+</div>
+<!-- end Progress Bar -->
+<span class="perc"></span>
+</div>
+<!-- end Progress -->
+<!-- start Product Countainer -->
+<div class="productContainer">
+  <span><i class="fa fa-gear fa-lg"></i></span>
+  
+  <h1>My Product</h1>
+  <h2>Type Button</h2>
+  <!-- start Buttons with  Effects form-left -->
+  <div class="buttons-effects" style="display: block;">
+  <button class="button-effect button-link">
+    <a href="#" data-link="Button Link" >Button Link</a><!-- Buttom Or Link data-link="Cube Link"-->
+  </button>
+  <div class="main-section">
+  <section>
+       <h3>HTML</h3>
+  </section>
+   <section>
+       <h3>CSS</h3>
+  </section>
+   <section>
+       <h3>JavaScript</h3> 
+  </section>
+  </div>
+  </div>
+<!-- ends Buttons with  Effects form-left -->
+  <span><i class="fa fa-comment fa-lg"></i></span>
+</div>
+<!-- end Product Countainer -->
+
+<!-- start Product -->
+
+<div class="products">
+  <div class="product">
+     <h3>Product One</h3>
+     <span class="date">05/05/2018</span>
+     <img src="http://www.placehold.it/100/100" alt="" />
+     <i class="fa fa-plus fa-lg"></i>
+     <p class="description">This is test description</p>
+  </div>
+  <div class="product">
+    <h3>Product Two</h3>
+    <span class="date">05/05/2018</span>
+    <img src="http://www.placehold.it/100/100" alt="" />
+    <i class="fa fa-plus fa-lg"></i>
+    <p class="description">This is test description</p>
+  </div>
+</div>
+<!-- end product -->
+
+<!-- start grid/List Items -->
+
+<div class="items grid-view">
+   <div class="view-options">
+  <i class="active fa fa-list fa-fw fa-2x" data-class="list-view"></i>
+  <i class="fa fa-th-large fa-fw fa-2x"></i>
+</div>
+  <div class="item">
+     <h3>Item One</h3>
+     <span class="date">05/05/2018</span>
+     <img src="http://www.placehold.it/100/DDD" alt="" />
+     <i class="fa fa-plus fa-lg"></i>
+     <p class="description">This is test description For Item</p>
+  </div>
+  <div class="item">
+    <h3>Item Two</h3>
+    <span class="date">05/05/2018</span>
+    <img src="http://www.placehold.it/100/DDD" alt="" />
+    <i class="fa fa-plus fa-lg"></i>
+    <p class="description">This is test description For Item</p>
+  </div>
+ 
+</div>
+<!-- start grid/List Items -->
+
+<div class="items list-view">
+  <div class="item">
+     <h3>Item One</h3>
+     <span class="date">05/05/2018</span>
+     <img src="http://www.placehold.it/100/DDD" alt="" />
+     <i class="fa fa-plus fa-lg"></i>
+     <p class="description">This is test description For Item</p>
+  </div>
+  <div class="item">
+    <h3>Item Two</h3>
+    <span class="date">05/05/2018</span>
+    <img src="http://www.placehold.it/100/DDD" alt="" />
+    <i class="fa fa-plus fa-lg"></i>
+    <p class="description">This is test description For Item</p>
+  </div>
+</div>
+<!-- end grid/List Items -->
+<!-- end grid/List Items -->
+
+</div>
+
+
+
+
+</div>
+<!-- ends Home section -->
+
+
+
+<!-- start section About Us -->
+<div id="about-us" class="block">
+   <h1>About Us</h1>
+
+   <canvas id="canvas"></canvas>
+   
+</div>
+<!-- ends section About Us -->
+
+<!-- start section Services -->
+<div id="services" class="block">
+   <h1>Services</h1>
+
+   <canvas id="canvas2"></canvas>
+
+</div>
+<!-- ends section Services -->
+
+
+<!-- start section Solutions -->
+<div id="solutions" class="block">
+   <h1>Solutions</h1>
+
+   <canvas id="canvas3"></canvas>
+
+</div>
+<!-- ends section solutions -->
+
+<!-- start section Products -->
+<div id="products" class="block">
+   <h1>Products</h1>
+</div>
+<!-- ends section Products -->
+
+<!-- start section Contact Us -->
+<div id="contact-us" class="block">
+   <h1>Contact Us</h1>
+</div>
+<!-- ends section Contact Us -->
+
+<!-- start scroll to top -->
+<a class="scroll-to-top skin-color" href="#">
+   <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!-- end scroll to top -->
+
+<!-- start main popup up  -->
+<div class="popup main-popup">
+  <div class="innerPop">
+    <button class="closePop"><i class="fa fa-close"></i></button>
+    <h4>2018/05/01</h4>
+    <h2>This Is Main Popup Up Head</h2>
+    <img src="06.jpg">
+    <audio controls="c
+    ontrols" style="display: block; margin: 0px 0 20px 0px; width: 100%;"></audio>
+    <span>Reting by:
+      <strong>Hamam Hamou</strong>
+    </span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure 
+        <a href="http://www.google.com" target="_blank" data-link="dolor in">dolor in</a> 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <label style="color: #666; margin-right: 20px;">Statestic:</label>
+
+    <button>Click</button>
+  </div>
+</div>
+<!-- start main popup up -->
+<!-- start second popup up -->
+<div class="popup second-popup">
+  <div class="innerPop">
+    <button class="closePop"><i class="fa fa-close"></i></button>
+    <h4>2018/05/01</h4>
+    <h2>This Is Second Popup Up Head</h2>
+    <img src="04.jpg">
+    <audio controls="controls" style="display: block; margin: 0px 0 20px 0px; width: 100%;"></audio>
+    <span>Reting by:
+      <strong> Hamam Hamou</strong>
+    </span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure 
+        <a href="http://www.google.com" target="_blank" data-link="dolor in">dolor in</a> 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <label style="color: #666;" >Statestic:</label>
+    <progress value="70" min="0" max="100" style="margin-top: 15px; width: 250px;">Statistic</progress>
+    <progress value="60" min="0" max="100" style="margin-top: 15px; width: 100%;">Statistic</progress>
+    <progress value="70" min="0" max="100" style="margin-top: 15px; width: 100%;">Statistic</progress>
+    <progress value="95" min="0" max="100" style="margin-top: 15px; width: 100%;">Statistic</progress>
+
+    <button>Click</button>
+  </div>
+</div>
+<!-- start second popup up -->
+
+<!-- start Linkes popup up -->
+<div class="popup linkes-popup">
+  <div class="innerPop">
+    <button class="closePop"><i class="fa fa-close"></i></button>
+    <h4>2018/05/01</h4>
+    <h2>This Is linkes Popup Up Head</h2>
+    <span>Reting by:
+      <strong> Hamam Hamou</strong>
+    </span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        <a href="http://www.google.com" target="_blank" data-link="dolor in" style="border: none; margin: 5px;
+        ">dolor in</a> 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <button>Click</button>
+  </div>
+</div>
+<!-- start linkes popup up -->
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!--<script type="text/javascript" src="js/bootstrab.min.js"></script>-->
+
+  </body>
+</html>
